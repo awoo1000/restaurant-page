@@ -1,3 +1,7 @@
 import "./styles.css";
+import { displayHome } from "./home.js";
 
-console.log("Webpack run test success!");
+const homeButton = document.querySelector(".home");
+homeButton.addEventListener("click", displayHome);
+
+displayHome();
