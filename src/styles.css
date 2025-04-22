@@ -59,12 +59,16 @@ ul > li > button:active {
   background-color: rgb(218, 212, 206);
 }
 
-h1, h3, h4 {
+h1, h2, h3, h4 {
   font-weight: bold;
 }
 
 h1 {
   font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.5rem;
 }
 
 h3 {
@@ -80,11 +84,12 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 70px; 
+  gap: 20px; 
+  padding: 50px;
 }
 
 .restaurant-name {
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 .section {
@@ -121,4 +126,45 @@ h4 {
 
 .location {
   padding: 20px 40px;
+}
+
+.products, .contact {
+  padding: 30px;
+}
+
+.products {
+  gap: 50px;
+}
+
+.menu-item {
+  display: grid;
+  gap: 10px;
+  /* grid-template-columns: 150px 150px 150px; */
+  width: 50ch;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.menu-item > img {
+  justify-self: end;
+  border-radius: 10px;
+  width: auto;
+  height: 180px;
+}
+
+.contact {
+  /* width: 30ch; */
+  /* gap: 5px; */
+  width: 45ch;
+}
+
+.contact > h3 {
+  margin-bottom: 10px;
+}
+
+.contact > p {
+  margin-left: 25px;
 }

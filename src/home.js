@@ -1,6 +1,7 @@
+import { getMainDiv } from "./index.js";
+
 export function displayHome() {
-    const mainDiv = document.querySelector("#content");
-    mainDiv.textContent = "";
+    const mainDiv = getMainDiv();
     const restaurantHeader = document.createElement("h1");
     restaurantHeader.classList.toggle("restaurant-name");
     restaurantHeader.textContent = "Regis's Exotic Delicacies";
