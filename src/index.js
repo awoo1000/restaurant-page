@@ -1,6 +1,7 @@
 import "./styles.css";
 import { displayHome } from "./home.js";
 import { displayMenu } from "./menu.js";
+import { displayContact } from "./contact.js";
 
 export function getMainDiv() {
     const mainDiv = document.querySelector("#content");
@@ -15,4 +16,7 @@ homeButton.addEventListener("click", displayHome);
 const menuButton = document.querySelector(".menu");
 menuButton.addEventListener("click", displayMenu);
 
-// displayHome();
+const contactButton = document.querySelector(".contact");
+contactButton.addEventListener("click", displayContact);
+
+displayHome();
